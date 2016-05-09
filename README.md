@@ -19,6 +19,7 @@ When that's complete, you can run the following commands.
 ```
 docker-compose up -d
 docker-compose run web rake db:create
+docker-compose restart web
 ```
 
 Find your docker-machine ip through `docker-machine ip`, and go to the IP it specified, on port `3000`.
