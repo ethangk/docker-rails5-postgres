@@ -3,6 +3,20 @@
 ## Setup
 ```
 git clone git@github.com:ethangk/docker-rails5-postgres.git
+docker-compose run web rails new . --api --force --database=postgresql
+```
+
+You'll need to go into `config/database.yml` and add the fragment below to the `development` configuration
+
+```
+  username: postgres
+  password:
+  host: db
+```
+
+When that's complete, you can run the following commands.
+
+```
 docker-compose up -d
 docker-compose run web rake db:create
 ```
