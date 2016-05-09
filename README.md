@@ -6,7 +6,7 @@ git clone git@github.com:ethangk/docker-rails5-postgres.git
 docker-compose run web rails new . --api --force --database=postgresql
 ```
 
-You'll need to go into `config/database.yml` and add the fragment below to the `development` configuration
+You'll need to go into `config/database.yml` and add the fragment below to the `default` configuration
 
 ```
   username: postgres
