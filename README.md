@@ -2,7 +2,8 @@
 
 ## Setup
 ```
-git clone git@github.com:ethangk/docker-rails5-postgres.git
+git clone git@github.com:ethangk/docker-rails5-postgres.git YOUR_FOLDER
+cd YOUR_FOLDER
 docker-compose run web rails new . --api --force --database=postgresql
 ```
 
